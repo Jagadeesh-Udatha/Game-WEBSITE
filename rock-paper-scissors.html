@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Rock Paper Scissors </title>
+    <link rel ="stylesheet" href ="rock-paper-scissors.css">
+    
+    <body> 
+      <div class="instruct-button">
+        <p class="js-instruct para-instruct"> Tap to see Instructions </p>
+        <img class="img-size" onclick="giveInstructions()" src="info.png"> </p>
+      </div>
+      
+     
+      <p class="score-card js-highest-score">  </p>
+      <p class="score-card js-win-streak"> </p>
+
+      <div class="whole-body">
+        <p class="js-profile-name"></p>
+        <p class = 'title'> Rock Paper Scissors</p>
+      
+      <button class = "move-button js-rock-button"> <img src ="rock-emoji.png" class = "move-icon"> </button>
+
+      <button class = "move-button js-paper-button"><img src ="paper-emoji.png" class = "move-icon"> </button>
+        
+      <button class = "move-button js-scissors-button"> <img src ="scissors-emoji.png" class = "move-icon"> </button>
+      <p class = 'js-result result'></p>
+      <p class = 'js-moves '> </p>
+      <p class = 'js-score score'></p>
+
+      <button class="reset-score-button js-reset-button"> Reset Score</button>
+      <button class="auto-play-button js-autoplay-button" > Auto Play</button>
+      <p class="timer js-timer"> </p>
+      <button class="exit-button js-exit-button" onclick ="backHome();"> Exit </button>
+      </div>
+      
+
+      <script  src ="rock-paper-scissors.js"> </script>
+      
+      
+    </body>
+   
+    
+  </head>
+</html>

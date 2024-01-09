@@ -1,0 +1,187 @@
+body{
+  /* background-image: linear-gradient(to top, #051937, #002234, #002729, #182a22, #292c23); */
+  background-image: url(45200.png);
+  height: 100vh;
+}
+
+
+.win-streak, .highest-streak{
+  color: rgb(189, 179, 179);
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.whole-body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.flame {
+  margin-bottom: -5px;
+}
+.coin-icon {
+  height: 100px;
+
+  border-radius: 50%;
+}
+.coin-button {
+  background-color: transparent;
+  height: 120px;
+  width: 120px;
+  color: black;
+  border: none;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.coin-button:active {
+  opacity:0.5;
+  transform: scale(0.9);
+}
+
+.result-wins-loses{
+  color: rgb(189, 179, 179);
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 50px;
+}
+
+.coin-result ,.game-starts{
+  color: rgb(189, 179, 179);
+  font-size: 20px;
+  margin-left:25px;
+  
+}
+
+.coin-icon-result {
+  height: 50px;
+  border-radius: 50%;
+}
+
+.coin {
+  width:8rem;
+  height : 8rem;
+  transform-style: preserve-3d;
+  margin-left: 70px;
+  margin-bottom: 40px;
+  border-radius: 50%;
+}
+
+.coin div{
+  width: 100%;
+  height: 100%;  
+  border-radius: 50%; 
+  backface-visibility: hidden;
+  position:absolute;
+  
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.instruct-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 7px;
+  margin: 1% 0% 0% 83%;
+  position: absolute;
+  line-height: 25px;
+  cursor:pointer;
+  
+}
+.para-instruct {
+  color:white;
+}
+
+.img-size {
+  height: 25px;
+}
+
+.reset-button , .auto-play-button ,.exit-button{
+  font-size: 20px;
+  padding: 8px 15px;
+  border: 2px solid black;
+  border-radius: 20px;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.reset-button {
+  margin-left: -8px;
+}
+
+.exit-button {
+  margin-top: 30px;
+  margin-left: 100px;
+}
+
+.coin .heads {
+  background-color: skyblue;
+  background: url(https://qph.cf2.quoracdn.net/main-qimg-9c81a54813716fccd8e3608ab2f51dcf-lq);
+  background-size: contain;
+}
+
+.coin .tails {
+  background-color: orange;
+  transform: rotateY(-180deg);
+  background: url(https://qph.cf2.quoracdn.net/main-qimg-148ae81e6fe0500e130fb547026a9b26-lq);
+  background-size: contain;
+}
+
+.animate-heads {
+  animation: flipHeads 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes flipHeads {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(1800deg);
+  }
+  
+}
+
+
+.animate-tails {
+  animation: flipTails 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes flipTails {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(1980deg);
+  }
+  
+}
+
+
+
+.rotate {
+  animation: rotate 1s backwards; /* Apply the rotation animation */
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotatex(0deg);
+    margin-bottom: 20px;
+  }
+  50% {
+    transform: rotatex(180deg);
+    margin-bottom: 0px;
+  }
+  100% {
+    transform: rotatex(0deg);
+  }
+}
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Heads Or Tails </title>
+    <link rel = "stylesheet" href = "CoinsGame.css">
+  </head>
+  
+  <body>
+    <div class="instruct-button">
+      <p class="js-instruct para-instruct"> Tap to see Instructions </p>
+      <img class="img-size" onclick="giveInstructions()" src="info.png"> 
+    </div>
+
+    <div>
+      <p class = "highest-streak"> </p>
+      <p class = "win-streak"></p>
+    </div>
+    <div class = "whole-body" > 
+      <div class = "coin">
+        <div class ="heads"></div>
+        <div class ="tails"></div>
+      </div>
+      <div >
+        <button onclick ="playerGuess('heads')" class="coin-button"> <img src ="https://qph.cf2.quoracdn.net/main-qimg-9c81a54813716fccd8e3608ab2f51dcf-lq" class="coin-icon"> </button>
+        <button onclick = "playerGuess('tails')" class="coin-button"> <img src ="https://qph.cf2.quoracdn.net/main-qimg-148ae81e6fe0500e130fb547026a9b26-lq" class = "coin-icon"> </button>
+        <p class = "js-result coin-result">  </p>
+        <p class ='js-wins-loses result-wins-loses'></p>
+        
+        <button onclick ="
+          score.wins=0, 
+          score.loses = 0
+          localStorage.removeItem('score');
+          document.querySelector('.js-wins-loses').innerHTML = `Wins: ${score.wins}, Loses: ${score.loses}`;
+          document.querySelector('.win-streak').innerHTML = `Win Streak: 0`;
+          eraseData();
+        " class="reset-button"> Reset Score </button>
+        <button onclick="
+        autoPlay()" class="auto-play-button js-autoplay-button" > Auto Play</button>
+        <p class="game-starts"></p>
+
+      </div>
+      <button class="exit-button js-exit-button" onclick="backHome()"> Exit </button>
+
+      
+    </div>
+    
+  </body>
+  <script src ="CoinsGame.js"></script>
+</html>

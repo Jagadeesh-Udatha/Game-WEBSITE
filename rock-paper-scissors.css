@@ -1,0 +1,89 @@
+body {
+  background-image: url(45200.png);
+  color: white;
+  font-family: arial;
+  
+}
+
+.whole-body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;;
+}
+.title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.move-icon {
+  height: 50px;
+}
+
+.move-icon:active {
+  opacity: 0.5;
+  transform: scale(0.8);
+
+}
+
+.move-button {
+  background-color: transparent;
+  border :3px solid white;
+  width : 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.result {
+  font-size : 25px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+.score {
+  margin-top: 60px;
+}
+
+.instruct-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 7px;
+  margin: 1% 0% 0% 83%;
+  position: absolute;
+  line-height: 25px;
+  cursor:pointer;
+  
+}
+
+.img-size {
+  height: 25px;
+}
+
+
+.reset-score-button, .auto-play-button ,.exit-button {
+  background-color: white;
+  border: 2px solid black;
+  font-size: 15px;
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 50px;
+  font-weight: bold;
+}
+
+
+.exit-button {
+  margin-top: 30px;
+}
+.score-card {
+  font-size: 20px;
+  margin-left: 15px;
+}
+
+.timer {
+  color: white;
+  font-size: 17px;
+}

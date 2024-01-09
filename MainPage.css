@@ -1,0 +1,275 @@
+
+      
+      body {
+        height: 100vh;
+        background-image: url(45200.png);
+        background-size: cover;
+      }
+
+      .upper-body {
+        height: 80px;
+        background-color: rgb(24, 24, 50);
+        display: flex;
+        flex-direction: row;
+        gap: 450px;
+        z-index: 99;
+        box-shadow: rgba(123, 122, 122, 0.19) 0px 10px 20px, rgba(141, 137, 137, 0.23) 0px 6px 6px;
+      }
+
+      .left-upper-body {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        margin-top: 15px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+      }
+
+      
+
+      .middle-upper-body {
+        width: 200px;
+      }
+
+
+
+      .main-logo {
+        height: 60px;
+        border-radius: 30px;
+      }
+
+      .main-logo-title , .middle-title{
+        color: rgb(185, 180, 180);
+        font-size: 22px;
+      }
+
+      .middle-title {
+        font-size: 30px;
+        color:rgb(248, 8, 8);
+      }
+
+      .middle-upper-body {
+        text-align: center;
+      }
+
+      .right-upper-body {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        width: 100px;
+        text-align: center;
+      }
+
+      .logo{
+        width: 60px;
+        height: 60px;
+        border-radius: 50px;
+        margin-bottom: 0px;
+        cursor: pointer;
+        margin-top: 10px;
+      }
+
+     .logout-scroll {
+      cursor: pointer;
+     }
+
+
+    .logo-info-scroll {
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(24, 24, 50);
+      border: 1px solid black;
+      border-radius: 10px;
+      color: rgb(165, 160, 160);
+    }
+
+      .middle-body-main {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .middle-body{
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+      }
+      .game1{
+        border-radius: 20px;
+        padding: 30px;
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVBGXVQuxqTx77zGbWN7jvdhTxzmoEsRwNkdmrTfQf&shttps://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77701553419.jpg");
+        background-size: contain;
+        width: 500px;
+        height: 180px;
+        
+        
+      }
+      .game2 {
+        border-radius: 20px;
+        padding: 10px;
+        width: 500px;
+        height: 215px;
+        background-image: url("https://i.stack.imgur.com/p9mUO.jpgdata:image/jpeg;base64,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https://img.freepik.com/free-photo/closeup-golden-usd-coins-dropping-dark-background-dollar-is-main-currency-exchange-payment-world-by-3d-render_616485-2.jpg?size=626&ext=jpg&ga=GA1.1.386372595.1697673600&semt=ais");
+      }
+      
+      .game-title1 {
+        font-size: 30px;
+        color: azure;
+        background-color: black;
+        border-radius: 50px;
+        padding: 5px;
+      }
+
+      .game-title2{
+        font-size: 30px;
+        color:azure;
+        border-radius: 50px;
+        padding: 5px;
+        background-image: url("https://photomonitor.co.uk/wp-content/uploads/2021/12/GU_HeadsTails_12.10.21_09-330x220.jpg");
+      }
+
+      .image-iconr, .image-iconp, .image-icons {
+        border-radius: 50%;
+        height: 70px;
+        margin: 20px;
+        padding: 10px;
+        background-color: rgb(66, 72, 74);
+        
+      }
+
+      .game-info {
+        color: black;
+        font-size: 25px;
+        background-image: url("https://jooinn.com/images/grunge-background-259.png://c0.wallpaperflare.com/preview/153/380/988/headphones-red-black-dark.jpg");
+        padding: 8px;
+        border-radius: 20px;
+        width: 480px;
+        text-align: center;
+      }
+
+      .image-iconh, .image-icont {
+        border-radius: 50%;
+        height: 90px;
+        margin: 20px;
+        padding: 10px;
+        animation: flipHeads 3s infinite;     
+      }
+
+
+      .image-iconr{
+        animation: moveRight 2s infinite;
+      }
+
+      .image-iconp {
+        animation: leftRight 2s infinite;
+      }
+      .image-icons {
+        animation: moveLeft 2s infinite;
+      }
+
+      @keyframes flipHeads {
+        from {
+          transform: rotateY(0deg);
+        }
+        to {
+          transform: rotatey(1800deg);
+        }
+        
+      }
+
+      @keyframes moveRight {
+        0% {
+          transform: translateX(0%);
+         
+        }
+        25% {
+          transform: translateX(150%);
+          
+        }
+        50% {
+          transform: translateX(300%);
+         
+        }
+        75% {
+          transform: translateX(0%);
+        }
+        100% {
+          transform: translateX(0%);
+        }
+      }
+
+      @keyframes leftRight{
+        0% {
+          transform: translatex(0%);
+         
+        }
+        25% {
+          transform: translateX(0%);
+          
+        }
+        50% {
+          transform : translatey(0%);
+         
+        }
+        75% {
+          transform: translateX(150%);
+        }
+        100% {
+          transform: translateY(0%);
+         
+        }
+        
+      }
+
+      @keyframes moveLeft {
+        0% {
+          transform: translateX(0%);
+         
+        }
+        25% {
+          transform: translateX(-150%);
+          
+        }
+        50% {
+          transform: translateX(-300%);
+         
+        }
+        75% {
+          transform: translateX(-150%);
+        }
+        100% {
+          transform: translateX(0%);
+        }
+      }
+
+      
+      .scroll-border {
+        border-bottom: 2px solid black;
+      }
+      @media only screen and (min-width: 1250px) and (max-width: 1290px) {
+        .upper-body {
+          gap: 350px;
+        }
+      }
+
+      @media only screen and (min-width: 993px) and (max-width: 1251px) {
+        .upper-body {
+          gap: 250px;
+        }
+      }
+
+      @media only screen and (min-width: 0px) and (max-width: 1050px) {
+        .upper-body {
+          gap: 100px;
+        }
+        
+        .middle-body {
+          flex-direction: column;
+        }
+      }
